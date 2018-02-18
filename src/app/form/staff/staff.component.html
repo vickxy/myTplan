@@ -1,0 +1,21 @@
+<a [routerLink]="['/demo']" class="btn btn-link"><h1>Click here to switch to demo component</h1></a>
+<h2>Detail of logged-in staff</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <td>First Name</td>
+      <td>Last Name</td>
+      <td>Username</td>
+    </tr>
+  </thead>
+  <tbody>
+     <tr *ngFor="let employee of employees">
+        <td>{{employee.firstName}}</td>
+        <td>{{employee.lastName}}</td>
+        <td>{{employee.userName}}</td>
+        
+     </tr>
+    
+  </tbody>
+ 
+</table>
